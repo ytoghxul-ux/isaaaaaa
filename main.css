@@ -1,0 +1,140 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #2c1e18 0%, #1b1b1b 100%);
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  text-align: center;
+  padding: 30px 15px;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #ffb85c;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid #ffb85c;
+  color: #ffb85c;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #ffb85c;
+  color: #1b1b1b;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px 30px;
+  flex-grow: 1;
+}
+
+
+.menu-item {
+  background: #2a2a2a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  border-color: #ffb85c;
+  box-shadow: 0 8px 25px rgba(255, 184, 92, 0.3);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin: 15px;
+  color: #ffb85c;
+}
+
+.menu-item p {
+  margin: 0 15px 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.price {
+  display: block;
+  margin: 0 15px 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  background: #ffb85c;
+  color: #1b1b1b;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 0 16px 16px;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #ff9933;
+  transform: scale(1.03);
+}
+
+.add-btn.added {
+  background: #44c767;
+  color: #fff;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1b1b1b;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.cart {
+  margin-top: 8px;
+  color: #ffb85c;
+  font-weight: 500;
+}
+

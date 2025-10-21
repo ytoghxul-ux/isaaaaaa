@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Brew Coffee Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <header>
+    <h1>Dark Brew ☕</h1>
+    <nav>
+      <button class="filter-btn active">Все</button>
+      <button class="filter-btn">Кофе</button>
+      <button class="filter-btn">Десерты</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="menu-item" data-category="coffee">
+        <img src="espresso.jpg" alt="Эспрессо">
+        <h3>Эспрессо</h3>
+        <p>Насыщенный вкус и крепкий аромат</p>
+        <span class="price">900 ₸</span>
+        <button class="add-btn">Добавить</button>
+      </div>
+
+      <div class="menu-item" data-category="coffee">
+        <img src="flatwhite.jpg" alt="Флэт Уайт">
+        <h3>Флэт Уайт</h3>
+        <p>Баланс крепкого эспрессо и мягкого молока</p>
+        <span class="price">1400 ₸</span>
+        <button class="add-btn">Добавить</button>
+      </div>
+
+      <div class="menu-item" data-category="coffee">
+        <img src="mocha.jpg" alt="Мокко">
+        <h3>Мокко</h3>
+        <p>Кофе с шоколадом и сливками</p>
+        <span class="price">1500 ₸</span>
+        <button class="add-btn">Добавить</button>
+      </div>
+
+      <div class="menu-item" data-category="dessert">
+        <img src="brownie.jpg" alt="Брауни">
+        <h3>Брауни</h3>
+        <p>Шоколадный десерт с орехами</p>
+        <span class="price">1200 ₸</span>
+        <button class="add-btn">Добавить</button>
+      </div>
+
+      <div class="menu-item" data-category="dessert">
+        <img src="tiramisu.jpg" alt="Тирамису">
+        <h3>Тирамису</h3>
+        <p>Итальянский десерт с кофе и сливками</p>
+        <span class="price">1600 ₸</span>
+        <button class="add-btn">Добавить</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dark Brew Coffee | Всегда свежий кофе ☕</p>
+    <div class="cart">
+      <span>🛒 Корзина:</span> <span id="cart-count">0</span> товаров
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
